@@ -1,4 +1,9 @@
 function Home() {
-  return <div></div>
+  return (
+    <div>
+      <h1>Home page</h1>
+      <p>Welcome to the user profiles app!</p>
+    </div>
+  )
 }
 export default Home
