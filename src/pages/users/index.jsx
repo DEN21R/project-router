@@ -2,13 +2,7 @@ import { Link } from 'react-router'
 
 Link
 
-const users = [
-  { id: 1, name: 'Alex', bio: 'Softwere engenier' },
-  { id: 2, name: 'Alice', bio: 'Admin' },
-  { id: 3, name: 'Max', bio: 'Manager' },
-]
-
-function Users() {
+function Users({ users }) {
   return (
     <div>
       <ul>
