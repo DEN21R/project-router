@@ -1,0 +1,31 @@
+.users {
+  background-color: rgb(141, 141, 205);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  padding: 50px;
+  border-radius: 10px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .link {
+      text-decoration: none;
+      color: #1a086b;
+    }
+    .link:hover {
+      color: #b9c9f0;
+    }
+  }
+}

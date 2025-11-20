@@ -1,4 +1,5 @@
 import AppLink from '../appLink'
+import styles from './styles.module.css'
 
 const menuNav = [
   {
@@ -13,8 +14,8 @@ const menuNav = [
 
 function Navbar() {
   return (
-    <div>
-      <ul>
+    <div className={styles.navbar}>
+      <ul className={styles.navbarContainer}>
         {menuNav.map((el, i) => (
           <li key={i + el.title}>
             <AppLink path={el.path} title={el.title} />

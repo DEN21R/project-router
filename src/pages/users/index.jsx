@@ -1,14 +1,16 @@
 import { Link } from 'react-router'
 
-Link
+import styles from './styles.module.css'
 
 function Users({ users }) {
   return (
-    <div>
+    <div className={styles.users}>
       <ul>
         {users.map((el) => (
           <li key={el.id}>
-            <Link to={`/users/${el.id}`}>{el.name}</Link>
+            <Link to={`/users/${el.id}`} className={styles.link}>
+              {el.name}
+            </Link>
           </li>
         ))}
       </ul>

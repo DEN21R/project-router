@@ -1,18 +1,17 @@
-import { useParams } from 'react-router'
-
-useParams
+import { useParams, useNavigate } from 'react-router'
 
 function UserProfile({ users }) {
   const { userId } = useParams()
+  const navigate = useNavigate()
 
   const user = users.find((el) => el.id === Number(userId))
 
   return (
     <div>
-      <h2>{user.id}</h2>
-      <p>{user.name}</p>
-      <p>{user.age}</p>
-      <p>{user.bio}</p>
+      <h1>{user.name}</h1>
+      <p>Age: {user.age}</p>
+      <p>Position at work: {user.bio}</p>
+      <button onClick={() => navigate('/users')}>back to users</button>
     </div>
   )
 }

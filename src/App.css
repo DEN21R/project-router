@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #08316b;
+  color: rgb(190, 221, 231);
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 30px;
+}
+button:hover {
+  color: rgb(0, 136, 255);
+  background-color: #08316b;
+}

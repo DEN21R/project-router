@@ -1,8 +1,10 @@
+import styles from './styles.module.css'
+
 function Home() {
   return (
-    <div>
+    <div className={styles.home}>
       <h1>Home page</h1>
-      <p>Welcome to the user profiles app!</p>
+      <p>Welcome to the user profiles app!Go to page Users!</p>
     </div>
   )
 }
